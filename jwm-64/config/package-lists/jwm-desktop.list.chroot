@@ -1,0 +1,35 @@
+jwm
+
+# notify-osd
+dunst
+
+connman
+connman-ui
+# wicd
+
+hsetroot
+
+lxterminal
+arandr
+lxappearance
+leafpad
+# gmrun
+
+pcmanfm
+libfm-modules
+# gvfs-backends
+# gvfs-fuse
+lsof
+
+# spacefm
+# udevil
+
+yad
+
+mpv
+# pnmixer
+# file-roller
+xarchiver
+
+# use dmenu instead
+# xfce4-appfinder

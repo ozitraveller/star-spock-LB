@@ -1,0 +1,27 @@
+i3
+i3status
+# i3blocks
+dunst
+
+wicd
+
+hsetroot
+
+lxappearance
+lxterminal
+lxtask
+arandr
+leafpad
+# geany
+
+pcmanfm
+libfm-modules
+# gvfs-backends
+# gvfs-fuse
+lsof
+
+# spacefm
+# lsof
+# udevil
+
+yad

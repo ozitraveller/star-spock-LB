@@ -1,0 +1,55 @@
+openbox
+obconf
+obmenu
+tint2
+
+# notify-osd
+dunst
+
+connman
+connman-ui
+
+# wicd
+
+hsetroot
+
+# xfce4-terminal
+lxterminal
+# rxvt-unicode
+# compton
+arandr
+lxappearance
+lxtask
+# gmrun
+mousepad
+# medit
+# geany
+
+# thunar
+# thunar-data
+# thunar-volman
+# thunar-archive-plugin
+# thunar-media-tags-plugin
+## thunar-actions-plugin
+# tumbler
+
+yad
+
+pcmanfm
+libfm-modules
+# gvfs-backends
+# gvfs-fuse
+lsof
+
+mpv
+# pnmixer
+# volti
+# file-roller
+xarchiver
+# xfce4-appfinder
+
+# spacefm
+# udevil
+# lsof
+
+# paper-icon-theme

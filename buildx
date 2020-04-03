@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# lb clean --all
+# lb clean noauto --all
+# lb config
+# lb build
+
+# sudo lb clean --purge
+# lb clean noauto --all
+if [ ! -f "./*.iso" ]; then
+	rm *.iso
+fi
+sudo lb clean
+sudo lb config
+sudo lb build

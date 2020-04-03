@@ -1,0 +1,51 @@
+xfce4-panel 
+xfce4-session 
+xfce4-settings 
+
+connman
+connman-ui
+# wicd
+
+# xfce4-mixer
+xfce4-terminal
+xfce4-appfinder
+xfce4-screenshooter
+xfce4-notifyd
+libnotify-bin
+libxfce4ui-utils
+xfce4-taskmanager
+xfwm4 
+xfwm4-themes 
+xfdesktop4
+
+qalculate-gtk
+
+menu
+
+# geany
+mousepad
+
+yad
+
+thunar
+thunar-data
+thunar-volman
+thunar-archive-plugin
+thunar-media-tags-plugin
+# thunar-actions-plugin
+tumbler
+
+# pmount
+# gvfs-backends
+# gvfs-fuse
+
+mpv
+# volti
+file-roller
+# xarchiver
+
+# gnome-brave-icon-theme
+gtk3-engines-xfce
+
+
+# beep brltty espeak espeakup yasr

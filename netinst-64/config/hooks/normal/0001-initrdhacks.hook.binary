@@ -1,0 +1,56 @@
+#!/bin/bash
+
+# This is an binary hook for live-build(7) to overwrite the banner
+# and add the gtkstep theme to the graphical Debian Installer.
+# To enable it, copy or symlink this hook into your config/binary_local-hooks
+# directory and add the replacement components at:
+#
+#  config/binary_debian-installer/
+#
+# The banner file should be a PNG image of dimensions 800 x 75.
+# Any other components should be inside a compressed tar archive
+# named additions.tar.gz with full file paths
+
+set -e
+
+echo DIY-LIVE-Hook: "$0"
+echo ""
+
+#~ echo "Replace debian installer kernel with hard link to live kernel if they do not differ:"
+#~ if [ "$(cmp -s binary/install/vmlinuz binary/live/vmlinuz-REPLACEME-i386 ; echo $?)" = "0" ]
+#~ then
+echo "  Replacing...REPLACEME"
+#~ echo $PWD
+
+#~ ls -al
+
+#~ ls -al $PWD/live
+
+	rm -rf $PWD/boot
+	#~ rm -f binary/install/gtk/vmlinuz
+	#~ rm -f binary/install/vmlinuz
+	rm -f $PWD/live/*686
+	#~ rm -f binary/live/initrd*
+
+#~ ls -al
+
+#~ ls -al $PWD/live
+
+	#~ ln binary/live/vmlinuz-REPLACEME-i386 binary/install/gtk/vmlinuz
+	#~ ln binary/live/vmlinuz-REPLACEME-i386 binary/install/vmlinuz
+	
+#~ ls -al binary/live
+	
+#~ fi
+echo ""
+
+# Delete superfluous non gtk debian installer components, in order to save some space:
+# rm -f binary/install/initrd.gz binary/install/vmlinuz
+# rm -f binary/install/gtk/initrd.gz binary/install/gtk/vmlinuz
+
+# Replace debian installer kernel with hard link to live kernel if they do not differ:
+# if [ "$(cmp -s binary/install/gtk/vmlinuz binary/live/vmlinuz ; echo $?)" = "0" ]
+# then
+# 	rm -f binary/install/gtk/vmlinuz
+# 	ln binary/live/vmlinuz binary/install/gtk/vmlinuz
+# fi
