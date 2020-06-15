@@ -64,6 +64,9 @@ Control Mod1 slash :RootMenu
 Mod4 d :Exec ~/.config/dmenu/dmenu-bind.sh
 Control Shift + :Exec ~/.config/dmenu/dmenu-bind.sh
 
+# alsa-mixer
+Mod4 m :Exec x-terminal-emulator -t 'Audio Mixer' -e /usr/bin/alsamixer
+
 # media player
 Mod4 m :Exec x-media-player
 

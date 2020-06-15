@@ -60,6 +60,36 @@
 					<action name="Restart"/>
 				</item>
 			</menu>
+			<menu id="tint2Config" label="tint2">
+				<item label="Edit config file">
+					<action name="Execute">
+						<command>
+							editor ~/.config/tint2/tint2rc
+						</command>
+					</action>
+				</item>		
+				<item label="tint2conf">
+					<action name="Execute">
+						<command>
+							/usr/bin/tint2conf
+						</command>
+					</action>
+				</item>						
+				<item label="Restart tint2">
+					<action name="Execute">
+						<command>
+							/usr/local/bin/apprestart "tint2"
+						</command>
+					</action>
+				</item>			
+			</menu>	
+			<item label="Restart conky">
+				<action name="Execute">
+					<command>
+						/usr/local/bin/apprestart "conky"
+					</command>
+				</action>
+			</item>	
 			<item label="ARandR Screen Layout Editor">
 				<action name="Execute">
 					<command>
@@ -84,7 +114,7 @@
 					</command>
 				</action>
 			</item>
-			<item label="Leafpad">
+			<item label="Mousepad">
 				<action name="Execute">
 					<command>
 						editor
@@ -121,6 +151,7 @@
 			</item>
 		</menu>
 		<menu id="graphics" label="Graphics">
+<!--
 		    <item label="Mirage">
 				<action name="Execute">
 					<command>
@@ -128,6 +159,7 @@
 					</command>
 				</action>
 			</item>
+-->
 			<menu id="graphicsScreenshots" label="Take Screenshot">
 				<item label="Now">
 					<action name="Execute">
@@ -176,6 +208,7 @@
 					</command>
 				</action>
 			</item>
+<!--
 			<item label="Audio Mixer">
 				<action name="Execute">
 					<command>
@@ -183,7 +216,9 @@
 					</command>
 				</action>
 			</item>
+-->
 		</menu>
+<!--
 		<menu id="office" label="Office">
 		   	<item label="Pdf Viewer">
 				<action name="Execute">
@@ -193,7 +228,23 @@
 				</action>
 			</item>
 		</menu>
+-->
 		<menu id="system" label="System">
+			<item label="Mount removable media">
+				<action name="Execute">
+					<command>
+						/usr/local/bin/usbpmount.sh
+					</command>
+				</action>
+			</item>
+			<item label="Unmount removable media">
+				<action name="Execute">
+					<command>
+						/usr/local/bin/usb-unmount.sh
+					</command>
+				</action>
+			</item>
+<!--			
 			<item label="Alternatives Configurator">
 				<action name="Execute">
 					<command>
@@ -201,6 +252,7 @@
 					</command>
 				</action>
 			</item>
+
 			<item label="LxTask Manager">
 				<action name="Execute">
 					<command>
@@ -215,6 +267,7 @@
 					</command>
 				</action>
 			</item>
+-->
 			<item label="Disk Manager">
 				<action name="Execute">
 					<command>
@@ -222,6 +275,7 @@
 					</command>
 				</action>
 			</item>
+<!--
 			<item label="Gdebi Package Installer">
 				<action name="Execute">
 					<command>
@@ -229,10 +283,11 @@
 					</command>
 				</action>
 			</item>
+-->
 		    <item label="Gparted">
 				<action name="Execute">
 					<command>
-						su-to-root -X -c /usr/sbin/gparted
+						/usr/sbin/gparted %f
 					</command>
 				</action>
 			</item>
@@ -260,7 +315,7 @@
 			<item label="Synaptic Package Manager">
 				<action name="Execute">
 					<command>
-						su-to-root -X -c /usr/sbin/synaptic
+						synaptic-pkexec
 					</command>
 				</action>
 			</item>

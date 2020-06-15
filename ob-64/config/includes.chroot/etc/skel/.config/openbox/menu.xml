@@ -8,7 +8,7 @@
 	<menu id="root-menu" label="Openbox 3">
 		<item label="Terminal"><action name="Execute"><command>x-terminal-emulator</command></action></item>
 		<item label="File Manager"><action name="Execute"><command>x-file-manager</command></action></item>
-		<item label="Web Browser"><action name="Execute"><command>x-www-browser</command></action></item>
+		<item label="Web Browser"><action name="Execute"><command>x-www-browser</command></action></item>		
 		<separator/>
 		<menu id="settings" label="Settings">
 			<menu id="obConfig" label="Openbox">
@@ -85,7 +85,7 @@
 						/usr/local/bin/apprestart "conky"
 					</command>
 				</action>
-			</item>				
+			</item>	
 			<item label="ARandR Screen Layout Editor">
 				<action name="Execute">
 					<command>
@@ -110,7 +110,7 @@
 					</command>
 				</action>
 			</item>
-			<item label="Leafpad">
+			<item label="Mousepad">
 				<action name="Execute">
 					<command>
 						editor
@@ -147,6 +147,7 @@
 			</item>
 		</menu>
 		<menu id="graphics" label="Graphics">
+<!--
 		    <item label="Mirage">
 				<action name="Execute">
 					<command>
@@ -154,6 +155,7 @@
 					</command>
 				</action>
 			</item>
+-->
 			<menu id="graphicsScreenshots" label="Take Screenshot">
 				<item label="Now">
 					<action name="Execute">
@@ -202,6 +204,7 @@
 					</command>
 				</action>
 			</item>
+<!--
 			<item label="Audio Mixer">
 				<action name="Execute">
 					<command>
@@ -209,7 +212,9 @@
 					</command>
 				</action>
 			</item>
+-->
 		</menu>
+<!--
 		<menu id="office" label="Office">
 		   	<item label="Pdf Viewer">
 				<action name="Execute">
@@ -219,6 +224,7 @@
 				</action>
 			</item>
 		</menu>
+-->
 		<menu id="system" label="System">
 			<item label="Mount removable media">
 				<action name="Execute">
@@ -233,7 +239,8 @@
 						/usr/local/bin/usb-unmount.sh
 					</command>
 				</action>
-			</item>			
+			</item>
+<!--			
 			<item label="Alternatives Configurator">
 				<action name="Execute">
 					<command>
@@ -241,6 +248,7 @@
 					</command>
 				</action>
 			</item>
+
 			<item label="LxTask Manager">
 				<action name="Execute">
 					<command>
@@ -255,6 +263,7 @@
 					</command>
 				</action>
 			</item>
+-->
 			<item label="Disk Manager">
 				<action name="Execute">
 					<command>
@@ -262,6 +271,7 @@
 					</command>
 				</action>
 			</item>
+<!--
 			<item label="Gdebi Package Installer">
 				<action name="Execute">
 					<command>
@@ -269,10 +279,11 @@
 					</command>
 				</action>
 			</item>
+-->
 		    <item label="Gparted">
 				<action name="Execute">
 					<command>
-						su-to-root -X -c /usr/sbin/gparted
+						/usr/sbin/gparted %f
 					</command>
 				</action>
 			</item>
@@ -300,7 +311,7 @@
 			<item label="Synaptic Package Manager">
 				<action name="Execute">
 					<command>
-						su-to-root -X -c /usr/sbin/synaptic
+						synaptic-pkexec
 					</command>
 				</action>
 			</item>

@@ -7,10 +7,10 @@ echo ""
 
 echo "I: Removing unneeded locales"
 
-echo "Creating all locales to avoid their creation during live boot"
-echo ""
-locale-gen --keep-existing
-echo ""
+# echo "Creating all locales to avoid their creation during live boot"
+# echo ""
+# locale-gen --keep-existing
+# echo ""
 
 
 #debconf-set-selections <<EOF
@@ -41,7 +41,7 @@ echo ""
 #echo dpkg-reconfigure localepurge:
 #echo ""
 
-## dpkg-reconfigure -f noninteractive localepurge
+dpkg-reconfigure -f noninteractive localepurge
 #dpkg-reconfigure localepurge
 
 echo localepurge:

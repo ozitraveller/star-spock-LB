@@ -1,5 +1,5 @@
 [global]
-    font = Monospace 9
+    font = Liberation Sans 10
     #font = Fira Mono 9
     
     # Allow a small subset of html markup:
@@ -67,7 +67,7 @@
     # the top and down respectevly.
     # The width can be negative.  In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
-    geometry = "300x5-24+48"
+    geometry = "500x5-30+28"
     
     # Shrink window if it's smaller than the width.  Will be ignored if
     # width is 0.
@@ -131,7 +131,7 @@
     #  * foreground: use the same color as the foreground;
     #  * frame: use the same color as the frame;
     #  * anything else will be interpreted as a X color.
-    separator_color = frame
+    separator_color = auto
     
     # Print a notification on startup.
     # This is mainly for error detection, since dbus (re-)starts dunst
@@ -142,20 +142,30 @@
     dmenu = /usr/bin/dmenu -p dunst:
     
     # Browser for opening urls in context menu.
-    browser = /usr/bin/firefox-esr
+    browser = x-www-browser
+    
+    # Define the corner radius of the notification window
+    # in pixel size. If the radius is 0, you have no rounded
+    # corners.
+    # The radius will be automatically lowered if it exceeds half of the
+    # notification height to avoid clipping text and/or icons.
+    # corner_radius = 7
 
     # Align icons left/right/off
+    icon_position = off
     icon_position = left
 
     # Paths to default icons.
+    icon_folders = /usr/share/icons/Grey-Maia/16x16/status/:/usr/share/icons/Grey-Maia/16x16/devices/
     #icon_folders = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
     #icon_folders = /usr/share/icons/Flattr/status/scalable/:/usr/share/icons/Flattr/devices/scalable/
     #icon_folders = /usr/share/icons/Paper/48x48/notifications/
+    
 [frame]
     #width = 3
     #color = "#323234"
-    width = 3
-    color = "##626262"
+    width = 0
+    color = "#626262"
 
 [shortcuts]
 
@@ -189,14 +199,14 @@
     #background = "#285577"
     #foreground = "#CECFD1"
     #background = "#26282B"
-    background = "#232323"
-    foreground = "#A8A8A8"
-    timeout = 5
+    background = "#FBF1C7"
+    foreground = "#D65D0E"
+    timeout = 7
 
 [urgency_critical]
-    background = "#D64E4E"
+    background = "#9D0006"
     foreground = "#F0E0E0"
-    frame_color = "#D64E4E"
+    frame_color = "#CC241D"
     timeout = 0
 
 
@@ -233,71 +243,71 @@
 #    format = ""
 
 #[signed_on]
-    appname = Pithos
-    summary = "*signed on*"
-    urgency = low
+#   appname = Pithos
+#    summary = "*signed on*"
+#    urgency = low
 #
 #[signed_off]
-    appname = Pithos
-    summary = *signed off*
-    urgency = low
+#   appname = Pithos
+#    summary = *signed off*
+#    urgency = low
 #
 #[sign_on]
-    appname = Clementine
-    summary = "*signed on*"
-    urgency = low
+#    appname = Clementine
+#    summary = "*signed on*"
+#    urgency = low
 #
 #[sign_off]
-    appname = Clementine
-    summary = *signed_off*
-    urgency = low
+#    appname = Clementine
+#    summary = *signed_off*
+#    urgency = low
 #[signed_on]
-    appname = DeadBeeF-0.7.2
-    summary = "*signed on*"
-    urgency = low
+#    appname = DeadBeeF-0.7.2
+#    summary = "*signed on*"
+#    urgency = low
 #
 #[signed_off]
-    appname = DeaDBeeF-0.7.2
-    summary = *signed off*
-    urgency = low
+#    appname = DeaDBeeF-0.7.2
+#    summary = *signed off*
+#    urgency = low
 #
 #[sign_on]
-    appname = Parole
-    summary = "*signed on*"
-    urgency = low
+#    appname = Parole
+#    summary = "*signed on*"
+#    urgency = low
 #
 #[sign_off]
-    appname = Parole
-    summary = *signed_off*
-    urgency = low    
+#    appname = Parole
+#    summary = *signed_off*
+#    urgency = low    
 #
 #[signed_on]
-    appname = mpv
-    summary = "*signed on*"
-    urgency = low
+#    appname = mpv
+#    summary = "*signed on*"
+#    urgency = low
 #
 #[signed_off]
-    appname = mpv
-    summary = *signed off*
-    urgency = low
-#
-#[signed_on]
-    appname = gmusicbrowser
-    summary = "*signed on*"
-    urgency = low
-#[signed_off]
-    appname = gmusicbrowser
-    summary = "*signed off*"
-    urgency = low    
+#    appname = mpv
+#    summary = *signed off*
+#    urgency = low
 #
 #[signed_on]
-    appname = audacious
-    summary = "*signed on*"
-    urgency = low
+#    appname = gmusicbrowser
+#    summary = "*signed on*"
+#    urgency = low
 #[signed_off]
-    appname = audacious
-    summary = "*signed off*"
-    urgency = low    
+#    appname = gmusicbrowser
+#    summary = "*signed off*"
+#    urgency = low    
+#
+#[signed_on]
+#    appname = audacious
+#    summary = "*signed on*"
+#    urgency = low
+#[signed_off]
+#    appname = audacious
+#    summary = "*signed off*"
+#    urgency = low    
 #
 #[twitter]
 #    appname = Pidgin

@@ -3,15 +3,16 @@ i3status
 # i3blocks
 dunst
 
-wicd
+connman
+connman-ui
 
 hsetroot
 
 lxappearance
 lxterminal
-lxtask
+# lxtask
 arandr
-leafpad
+mousepad
 # geany
 
 pcmanfm

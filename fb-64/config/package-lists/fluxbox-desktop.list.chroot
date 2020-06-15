@@ -1,6 +1,7 @@
 fluxbox
 # fbpager
 # fbpanel
+tint2
 
 # notify-osd
 dunst
@@ -17,9 +18,9 @@ lxterminal
 # compton
 arandr
 lxappearance
-lxtask
+# lxtask
 # gmrun
-leafpad
+mousepad
 # geany
 # evince
 # atril

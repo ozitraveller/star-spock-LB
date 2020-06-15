@@ -85,8 +85,10 @@ echo ""
 rm -rf /usr/share/slim/themes/{default,default-OLD,desktop-slim-theme,devuan-curve,devuan-curve-purpy}
 
 echo ""
+echo STAR-LIVE-Hook: "Removing fonts"
+echo ""
 
-rm -f /etc/xdg/autostart/polkit-gnome-authentication-agent-1.desktop*
-rm -f /etc/xdg/connman-tray.desktop
+rm -rf /usr/share/fonts/{droid, noto}
 
-apt-get clean
+echo ""
+

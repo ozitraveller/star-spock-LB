@@ -7,12 +7,12 @@ session.screen0.toolbar.height:	0
 session.screen0.toolbar.onhead:	1
 session.screen0.toolbar.maxOver:	false
 session.screen0.toolbar.widthPercent:	100
-session.screen0.toolbar.layer:	Dock
-session.screen0.toolbar.visible:	true
+session.screen0.toolbar.layer:	Desktop
+session.screen0.toolbar.visible:	false
 session.screen0.toolbar.alpha:	255
-session.screen0.toolbar.placement:	TopCenter
+session.screen0.toolbar.placement:	TopLeft
 session.screen0.toolbar.autoHide:	false
-session.screen0.toolbar.tools:	workspacename, iconbar, systemtray, clock
+session.screen0.toolbar.tools:	prevworkspace, worspacename, nextworkspace, clock, prevwindow, nextwindow, iconbar
 session.screen0.slit.layer:	Dock
 session.screen0.slit.acceptKdeDockapps:	true
 session.screen0.slit.alpha:	255
@@ -32,13 +32,13 @@ session.screen0.iconbar.iconTextPadding:	10
 session.screen0.iconbar.iconWidth:	128
 session.screen0.iconbar.alignment:	Relative
 session.screen0.allowRemoteActions:	true
-session.screen0.workspaces:	1
+session.screen0.workspaces:	2
 session.screen0.clickRaises:	true
 session.screen0.tooltipDelay:	500
 session.screen0.tabFocusModel:	ClickToTabFocus
 session.screen0.defaultDeco:	NORMAL
 session.screen0.colPlacementDirection:	TopToBottom
-session.screen0.workspaceNames:	Workspace 1, Workspace 2, Workspace 3, Workspace 4,,
+session.screen0.workspaceNames:	1, 2, 3, 4,
 session.screen0.rowPlacementDirection:	LeftToRight
 session.screen0.opaqueMove:	true
 session.screen0.strftimeFormat:	%02k:%M
@@ -51,7 +51,7 @@ session.screen0.focusModel:	ClickFocus
 session.screen0.maxIgnoreIncrement:	true
 session.screen0.showwindowposition:	false
 session.screen0.menuDelay:	200
-session.screen0.workspacewarping:	true
+session.screen0.workspacewarping:	false
 session.screen0.edgeSnapThreshold:	10
 session.screen0.maxDisableResize:	false
 session.screen0.focusNewWindows:	true

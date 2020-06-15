@@ -1,8 +1,8 @@
 [Default Applications]
-x-scheme-handler/http=iceweasel.desktop
-x-scheme-handler/https=iceweasel.desktop
-x-scheme-handler/ftp=iceweasel.desktop
-text/html=iceweasel.desktop
-text/xml=iceweasel.desktop
-application/xhtml_xml=iceweasel.desktop
-image/webp=iceweasel.desktop
+x-scheme-handler/http=epiphany.desktop
+x-scheme-handler/https=epiphany.desktop
+x-scheme-handler/ftp=epiphany.desktop
+text/html=epiphany.desktop
+text/xml=epiphany.desktop
+application/xhtml_xml=epiphany.desktop
+image/webp=epiphany.desktop

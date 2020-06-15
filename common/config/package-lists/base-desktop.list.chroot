@@ -22,18 +22,19 @@ gtk2-engines-murrine
 # gtk2-engines 
 gtk2-engines-pixbuf
 
+psmisc
 
-bum 
+# bum 
 hdparm 
 disk-manager 
 ufw 
 gparted  
 htop
-gksu 
-gdebi 
+# gksudo
+# gdebi 
 hardinfo 
 synaptic
-galternatives
+# galternatives
 # usbpmount
 
 # yad
@@ -48,7 +49,9 @@ suckless-tools
 # iceweasel
 # netsurf
 epiphany-browser
-mirage
+# firefox-esr
+# needed for screenshots
+mirage 
 # geeqie
 conky-all 
 # file-roller

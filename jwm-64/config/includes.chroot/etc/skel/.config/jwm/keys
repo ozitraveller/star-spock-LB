@@ -24,7 +24,8 @@
    <Key mask="A" key="Left">ldesktop</Key>
    <Key mask="A" key="Up">udesktop</Key>
    <Key mask="A" key="Down">ddesktop</Key>
-   
+
+   <Key mask="4" key="a">exec:x-terminal-emulator -t 'Audio Mixer' -e /usr/bin/alsamixer</Key>     
    <Key mask="4" key="t">exec:x-terminal-emulator</Key>
    <Key mask="4" key="w">exec:x-www-browser</Key>
    <Key mask="4" key="f">exec:x-file-manager</Key>
@@ -34,7 +35,7 @@
    <Key mask="4" key="x">exec:/usr/bin/star-logout</Key>
    <Key mask="4" key="d">exec:~/.config/dmenu/dmenu-bind.sh</Key>
      
-   <Key mask="CS" key="+">exec:~/.config/dmenu/dmenu-bind.sh</Key> 
+<!--   <Key mask="CS" key="+">exec:~/.config/dmenu/dmenu-bind.sh</Key> -->
    <Key mask="CS" key="j">exec:/usr/bin/touchtoggle.sh</Key>
    
    #make a screenshot

@@ -15,7 +15,7 @@ libnotify-bin
 libxfce4ui-utils
 xfce4-taskmanager
 xfwm4 
-xfwm4-themes 
+# xfwm4-themes 
 xfdesktop4
 
 qalculate-gtk
@@ -24,6 +24,7 @@ menu
 
 # geany
 mousepad
+mirage
 
 yad
 

@@ -1,0 +1,9 @@
+[Added Associations]
+text/plain=mousepad.desktop;geany.desktop;
+application/x-shellscript=geany.desktop;diffuse.desktop;
+text/x-log=geany.desktop;
+text/x-matlab=geany.desktop;
+application/x-desktop=mousepad.desktop;
+application/xml=geany.desktop;
+application/x-compressed-tar=xarchiver.desktop;
+application/x-theme=mousepad.desktop;

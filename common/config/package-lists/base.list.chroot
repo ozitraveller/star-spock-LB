@@ -25,6 +25,11 @@ slim
 
 # fast reboots
 kexec-tools
+
+libpolkit-backend-1-0
+libpolkit-gobject-consolekit-1-0
+consolekit
+
 gettext-base
 
 # xfce4-power-manager
@@ -163,7 +168,7 @@ lsb-release
 wmctrl
 
 
-setnet
+# setnet
 wpasupplicant
 net-tools
 iputils-ping

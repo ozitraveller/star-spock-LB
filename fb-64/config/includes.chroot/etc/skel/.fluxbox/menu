@@ -10,7 +10,12 @@
 	[exec] (Web browser) {x-www-browser} <>
 [separator]	
       [submenu] (Settings) {}
-         [exec] (Restart conky) {/usr/local/bin/apprestart "conky"} <>      
+         [submenu] (tint2) {}
+            [exec] (Edit config file) {editor ~/.config/tint2/tint2rc}
+            [exec] (tint2conf) {/usr/bin/tint2conf}
+            [exec] (Restart tint2) {/usr/local/bin/apprestart "tint2"} <>
+         [end]
+         [exec] (Restart conky) {/usr/local/bin/apprestart "conky"} <>
          [exec] (ARandR Screen Layout Editor) {/usr/bin/arandr}
          [exec] (Appearance) {/usr/bin/lxappearance} <>
       [end]
@@ -18,14 +23,14 @@
       [submenu] (Accessories) {}
 #        [exec] (Archive Manager) {/usr/bin/file-roller} <>	
 		 [exec] (Calculator) {/usr/bin/xcalc} <>
-         [exec] (Leafpad) {editor} <>
+         [exec] (Mousepad) {editor} <>
          [exec] (Pcmanfm) {x-file-manager} <>
          [exec] (Terminal) {x-terminal-emulator} <>	
          [exec] (Xarchiver) {/usr/bin/xarchiver} <>		 		 		 
          [exec] (Xterm) {/usr/bin/xterm} <>		 		 		 
       [end]
       [submenu] (Graphics) {}
-         [exec] (Mirage) {mirage} <>
+#          [exec] (Mirage) {mirage} <>
          [submenu] (Take Screenshot) {}
 			[exec] (Now) {scrot '%Y-%m-%d--%s_$wx$h_scrot.png' -e 'mv $f ~/images/ &amp; mirage ~/images/$f'} <>
 			[exec] (In 5 Seconds...) {scrot -d 5 '%Y-%m-%d--%s_$wx$h_scrot.png' -e 'mv $f ~/images/ &amp; mirage ~/images/$f'} <>
@@ -38,24 +43,24 @@
       [end]
       [submenu] (Multimedia) {}
          [exec] (Mpv) {x-media-player}
-         [exec] (Audio Mixer) {x-terminal-emulator -t 'Audio Mixer' -e /usr/bin/alsamixer}
+#          [exec] (Audio Mixer) {x-terminal-emulator -t 'Audio Mixer' -e /usr/bin/alsamixer}
       [end]
-      [submenu] (Office) {}
-         [exec] (Pdf Viewer) {/usr/bin/xpdf}
-      [end]
+#     [submenu] (Office) {}
+#        [exec] (Pdf Viewer) {/usr/bin/xpdf}
+#     [end]
       [submenu] (System) {}
-		 [exec] (Mount removable media) {/usr/local/bin/usbpmount.sh} <>
-		 [exec] (Unmount removable media) {/usr/local/bin/usb-unmount.sh} <>
-      	 [exec] (Alternatives Configurator) {su-to-root -X -c /usr/bin/galternatives} <>
-		 [exec] (LxTask Manager) {/usr/bin/lxtask} <>
-         [exec] (Bootup Manager) {su-to-root -X -c /usr/bin/bum}
+      	 [exec] (Mount removable media) {/usr/local/bin/usbpmount.sh} <>
+      	 [exec] (Unmount removable media) {/usr/local/bin/usb-unmount.sh} <>
+#      	 [exec] (Alternatives Configurator) {su-to-root -X -c /usr/bin/galternatives} <>
+#		 [exec] (LxTask Manager) {/usr/bin/lxtask} <>
+#        [exec] (Bootup Manager) {su-to-root -X -c /usr/bin/bum}
          [exec] (Disk Manager) {su-to-root -X -c /usr/sbin/disk-manager}
-         [exec] (Gdebi Package Installer) {su-to-root -X -c /usr/bin/gdebi-gtk} <>
+#        [exec] (Gdebi Package Installer) {su-to-root -X -c /usr/bin/gdebi-gtk} <>
          [exec] (Gparted) {su-to-root -X -c /usr/sbin/gparted}
          [exec] (Root Terminal) {su-to-root -X -c x-terminal-emulator} <>
          [exec] (Root File Manager) {su-to-root -X -c x-file-manager} <>
          [exec] (System Information) {/usr/bin/hardinfo}
-         [exec] (Synaptic Package Manager) {su-to-root -X -c /usr/sbin/synaptic} <>
+         [exec] (Synaptic Package Manager) {synaptic-pkexec} <>
       [end]
       [submenu] (Fluxbox) {Settings} <>
          [config] (Fluxbox Menu)

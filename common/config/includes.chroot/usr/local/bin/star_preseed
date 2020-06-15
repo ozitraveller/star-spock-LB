@@ -1,13 +1,11 @@
 #!/bin/bash
 
-set -e
+# set -e
 
-# set star sources.list
+# messages here
+# /var/log/installer/syslog
 
-#~ if [ -f "/etc/apt/sources.list.d/zz-sources.list" ]; then
-	#~ rm -f /etc/apt/sources.list.d/zz-sources.list
-#~ fi
-
+# set sources.list
 cp /usr/share/star/preferences /etc/apt/preferences
 cp /usr/share/star/apt.conf /etc/apt/apt.conf
 cp /usr/share/star/sources.list /etc/apt/sources.list
@@ -15,18 +13,21 @@ cp /usr/share/star/sources.list /etc/apt/sources.list
 # remove the live tools
 dpkg --purge live-tools
 
-# remove autologin after install
-# sed -i "s/autologin-user=starlive/# autologin-user=/g" /etc/lightdm/lightdm.conf
-# sed -i "s/autologin-user-timeout=0/# autologin-user-timeout=0/g" /etc/lightdm/lightdm.conf
-
 # update grub
 sed -i "s/echo Debian/echo Star/g" /etc/default/grub
+sed -i "s/echo Devuan/echo Star/g" /etc/default/grub
 sed -i "s/quiet//g" /etc/default/grub
 sed -i "s/GRUB_THEME=/#GRUB_THEME=/g" /etc/default/grub
 echo "GRUB_BACKGROUND=\"/usr/share/images/desktop-base/star-grub-plain.png\"" >> /etc/default/grub
 update-grub
 
+# link /usr/lib/os-release -> /etc/os-release
+rm -f /etc/os-release
+ln -sf /usr/lib/os-release /etc/os-release
+
 # enable firewall
+ufw disable
 ufw default reject incoming
 ufw default allow outgoing
 ufw enable
+
