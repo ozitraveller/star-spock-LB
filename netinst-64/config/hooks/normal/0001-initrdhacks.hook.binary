@@ -13,13 +13,13 @@
 
 set -e
 
-echo DIY-LIVE-Hook: "$0"
+echo STAR-LIVE-Hook: "$0"
 echo ""
 
 #~ echo "Replace debian installer kernel with hard link to live kernel if they do not differ:"
 #~ if [ "$(cmp -s binary/install/vmlinuz binary/live/vmlinuz-REPLACEME-i386 ; echo $?)" = "0" ]
 #~ then
-echo "  Replacing...REPLACEME"
+# echo "  Replacing...REPLACEME"
 #~ echo $PWD
 
 #~ ls -al
@@ -30,7 +30,6 @@ echo "  Replacing...REPLACEME"
 	#~ rm -f binary/install/gtk/vmlinuz
 	#~ rm -f binary/install/vmlinuz
 	rm -f $PWD/live/*686
-	#~ rm -f binary/live/initrd*
 
 #~ ls -al
 

@@ -13,6 +13,7 @@ connman-ui
 hsetroot
 
 # xfce4-terminal
+disk-manager 
 lxterminal
 # rxvt-unicode
 # compton

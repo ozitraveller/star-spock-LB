@@ -35,3 +35,5 @@ policykit-1
 policykit-1-gnome
 rfkill
 usbutils
+
+sudo

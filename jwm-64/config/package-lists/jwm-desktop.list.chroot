@@ -10,6 +10,7 @@ connman-ui
 hsetroot
 
 lxterminal
+disk-manager 
 arandr
 lxappearance
 mousepad
