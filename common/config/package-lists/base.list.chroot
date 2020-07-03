@@ -136,7 +136,7 @@ iucode-tool
 
 # zd1211-firmware
 firmware-zd1211
-firmware-linux 
+# firmware-linux 
 firmware-linux-nonfree 
 firmware-netxen
 firmware-ralink 
