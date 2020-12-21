@@ -9,14 +9,17 @@ echo "
   MySQL database server? If you choose to do this, the following packages
   will be installed:
 
-      apache2 mysql-server php5 php-pear php5-gd php5-mysql php5-imagick
-      php5-curl curl phpmyadmin rsync cronolog
+php7.3 libapache2-mod-php7.3 php-mysql
+
+      apache2 default-mysql-server php7.3 php-pear php7.3-gd php7.3-mysql php-imagick
+      php7.3-curl curl phpmyadmin rsync cronolog
 
    Note: additional packages listed as dependencies will also be installed."
 
 if prompt "  Would you like to install LAMP stack?"; then
-    sudo apt-get install -y apache2 mysql-server php5 php-pear php5-gd php5-mysql php5-imagick php5-curl curl phpmyadmin rsync cronolog
-
+    sudo apt-get install -y apache2 default-mysql-server php7.3 php-pear php7.3-gd php7.3-mysql php-imagick 
+    php7.3-curl curl phpmyadmin rsync cronolog
+    
 	# Enable modrewrite - does this work?
     A2D='/etc/apache2/sites-available'
     if [[ -f $A2D/default ]]; then

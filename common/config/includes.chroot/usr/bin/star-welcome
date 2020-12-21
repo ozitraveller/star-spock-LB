@@ -144,7 +144,7 @@ fi
 
 # Run through steps
 # STEPS_BASIC=('apt-update' 'apt-dist-upgrade' 'office-print' 'media-graphics' 'install-java-packages' 'install-gigolo-gvfs' 'install-gimp' 'install-libreoffice' 'devel')
-STEPS_MAIN=('set-root-password' 'apt-update' 'apt-dist-upgrade' 'laptop' 'office-print' 'media-graphics' 'cli-apps' 'browser' 'other' 'devel' 'quit')
+STEPS_MAIN=('set-root-password' 'apt-update' 'apt-dist-upgrade' 'devuan-release-notes' 'laptop' 'office-print' 'media-graphics' 'cli-apps' 'browser' 'other' 'devel' 'quit')
 STEPS_OFFICE_PRINT=('install-libreoffice' 'install-printer-packages' 'back')
 STEPS_MEDIA_GRAPHICS=('install-gimp' 'back')
 STEPS_OTHER=('install-java-packages' 'install-gigolo-gvfs' 'back')
@@ -152,7 +152,7 @@ STEPS_BROWSER=('install-firefox' 'install-chromium' 'install-chrome' 'back')
 # STEPS_OTHER=('install-java-packages' 'back')
 STEPS_LAPTOP=('install-laptop' 'back')
 STEPS_DEVEL=('devel-install-version-control-tools' 'devel-install-ssh-server' 'devel-install-lamp-stack' 'devel-install-packaging-tools' 'back')
-STEPS_CLI_APPS=('install-pmrp' 'install-pmytd' 'back')
+STEPS_CLI_APPS=('install-pmrp' 'install-pmytd' 'install-mp3blaster' 'back')
 
 # . "$LIBDIR/intro"
 connection-test
@@ -170,7 +170,7 @@ do
 	select opt in "${STEPS_MAIN[@]}"; do
 	
 		case $opt in
-			"apt-update" | "apt-dist-upgrade" | "set-root-password")
+			"apt-update" | "apt-dist-upgrade" | "set-root-password" | "devuan-release-notes")
 				. "$LIBDIR/$opt"
 				break
 			;;

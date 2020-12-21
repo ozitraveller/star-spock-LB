@@ -10,10 +10,10 @@ echo "
   feature rich office suite, LibreOffice? If you choose to do this, the 
   following package will be installed:
 
-      libreoffice libreoffice-gnome libreoffice-gtk2
+      libreoffice libreoffice-gtk
 
   Note: additional packages listed as dependencies will also be installed."
 
 if prompt "  Would you like to install LibreOffice?"; then
-	sudo apt-get install -y libreoffice libreoffice-gnome libreoffice-gtk2
+	sudo apt-get install -y libreoffice libreoffice-gtk
 fi

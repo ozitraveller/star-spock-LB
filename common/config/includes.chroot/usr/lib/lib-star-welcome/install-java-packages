@@ -9,7 +9,7 @@ echo "
   Would you like to install Java support now? If you choose to do 
   this, the following package will be installed:
 
-      openjdk-11-jre [icedtea-8-plugin]
+      openjdk-11-jre  [icedtea-8-plugin]
 
   Note: additional packages listed as dependencies will also be installed."
 

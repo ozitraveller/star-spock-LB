@@ -23,8 +23,8 @@ slim
 ## vpnc 
 ## vpnc-scripts
 
-# fast reboots
-kexec-tools
+# fast reboots, but only works with sysvinitS
+# kexec-tools
 
 libpolkit-backend-1-0
 libpolkit-gobject-consolekit-1-0
@@ -151,7 +151,10 @@ firmware-bnx2
 firmware-b43-installer 
 firmware-b43legacy-installer 
 b43-fwcutter 
-mobile-broadband-provider-info 
+mobile-broadband-provider-info
+
+wireless-regdb
+crda
 
 # tool for configuring Linux wireless devices
 iw

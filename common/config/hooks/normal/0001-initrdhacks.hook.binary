@@ -30,6 +30,7 @@ mv binary/live/initrd.img* binary/live/initrd.img
 mv binary/live/vmlinuz* binary/live/vmlinuz
 
 rm -f binary/tmp*
+rm -f binary/efi.img
 
 ls -al
 ls -al ../
