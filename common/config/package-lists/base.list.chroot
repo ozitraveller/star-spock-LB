@@ -23,7 +23,7 @@ slim
 ## vpnc 
 ## vpnc-scripts
 
-# fast reboots, but only works with sysvinitS
+# fast reboots, but only works with sysvinit
 # kexec-tools
 
 libpolkit-backend-1-0
@@ -180,7 +180,7 @@ traceroute
 
 apt-transport-https
 
-openssh-server
+# openssh-server
 
 hwinfo
 pmount
