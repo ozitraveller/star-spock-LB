@@ -283,7 +283,7 @@
 		    <item label="Gparted">
 				<action name="Execute">
 					<command>
-						/usr/sbin/gparted %f
+						su-to-root -X -c /usr/sbin/gparted
 					</command>
 				</action>
 			</item>
